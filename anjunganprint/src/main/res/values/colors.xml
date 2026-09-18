@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy_dark">#021B5B</color>
+    <color name="navy_light">#032A88</color>
+    <color name="blue_grad_start">#0A5CFF</color>
+    <color name="blue_grad_end">#0058FF</color>
+    <color name="receipt_header_start">#002C9D</color>
+    <color name="receipt_header_end">#001F6F</color>
+    <color name="ink">#1E293B</color>
+    <color name="muted">#64748B</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="field_border">#D1D9E6</color>
+    <color name="light_box">#F8FAFC</color>
+    <color name="alert_warning_bg">#FEF3C7</color>
+    <color name="alert_warning_fg">#92400E</color>
+    <color name="alert_danger_bg">#FEE2E2</color>
+    <color name="alert_danger_fg">#991B1B</color>
+    <color name="alert_info_bg">#DBEAFE</color>
+    <color name="alert_info_fg">#1E40AF</color>
+    <color name="alert_success_bg">#D1FAE5</color>
+    <color name="alert_success_fg">#166534</color>
+    <color name="danger">#DC3545</color>
+    <color name="warning">#FFC107</color>
+    <color name="success">#198754</color>
+    <color name="gray_closed_bg">#E5E7EB</color>
+    <color name="gray_closed_fg">#6B7280</color>
+    <color name="bg_dark_receipt">#010814</color>
+    <color name="ic_launcher_background">#0A5CFF</color>
+</resources>

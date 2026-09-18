@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Caysn IW-J82BT: VID 0x4B43 = 19275, PID 0x3830 = 14384 -->
+    <usb-device vendor-id="19275" product-id="14384" />
+</resources>

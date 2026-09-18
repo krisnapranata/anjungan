@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <include
+        android:id="@+id/screenCari"
+        layout="@layout/screen_cari" />
+
+    <include
+        android:id="@+id/screenPoli"
+        layout="@layout/screen_poli" />
+
+    <include
+        android:id="@+id/screenDokter"
+        layout="@layout/screen_dokter" />
+
+    <include
+        android:id="@+id/screenKonfirmasi"
+        layout="@layout/screen_konfirmasi" />
+
+    <include
+        android:id="@+id/screenSukses"
+        layout="@layout/screen_sukses" />
+
+    <include
+        android:id="@+id/screenPengaturan"
+        layout="@layout/screen_pengaturan" />
+</FrameLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark_receipt"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:maxWidth="480dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_receipt_header"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvRsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvReceiptLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/title_sukses"
+                    android:textColor="#C7D4F5"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_receipt_body"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvNoRegBig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/ink"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@drawable/divider_dashed" />
+
+                <LinearLayout
+                    style="@style/ReceiptRow">
+
+                    <TextView
+                        style="@style/ReceiptLabel"
+                        android:text="No.Registrasi" />
+
+                    <TextView
+                        android:id="@+id/tvNoReg"
+                        style="@style/ReceiptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ReceiptRow">
+
+                    <TextView
+                        style="@style/ReceiptLabel"
+                        android:text="No.Rawat" />
+
+                    <TextView
+                        android:id="@+id/tvNoRawat"
+                        style="@style/ReceiptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ReceiptRow">
+
+                    <TextView
+                        style="@style/ReceiptLabel"
+                        android:text="Tgl" />
+
+                    <TextView
+                        android:id="@+id/tvTgl"
+                        style="@style/ReceiptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ReceiptRow">
+
+                    <TextView
+                        style="@style/ReceiptLabel"
+                        android:text="No.RM" />
+
+                    <TextView
+                        android:id="@+id/tvNoRm"
+                        style="@style/ReceiptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ReceiptRow">
+
+                    <TextView
+                        style="@style/ReceiptLabel"
+                        android:text="Nama" />
+
+                    <TextView
+                        android:id="@+id/tvNama"
+                        style="@style/ReceiptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ReceiptRow">
+
+                    <TextView
+                        style="@style/ReceiptLabel"
+                        android:text="Poliklinik" />
+
+                    <TextView
+                        android:id="@+id/tvPoli"
+                        style="@style/ReceiptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rowDokter"
+                    style="@style/ReceiptRow">
+
+                    <TextView
+                        style="@style/ReceiptLabel"
+                        android:text="Dokter" />
+
+                    <TextView
+                        android:id="@+id/tvDokter"
+                        style="@style/ReceiptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ReceiptRow">
+
+                    <TextView
+                        style="@style/ReceiptLabel"
+                        android:text="Jenis Bayar" />
+
+                    <TextView
+                        android:id="@+id/tvPenjab"
+                        style="@style/ReceiptValue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ReceiptRow">
+
+                    <TextView
+                        style="@style/ReceiptLabel"
+                        android:text="Status" />
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        style="@style/ReceiptValue" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@drawable/divider_dashed" />
+
+                <TextView
+                    android:id="@+id/tvTerimaKasih"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/footer_terimakasih"
+                    android:textColor="@color/muted"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPrintStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCetak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_btn_primary"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="@string/btn_cetak"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSelesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_btn_outline"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="@string/btn_selesai"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

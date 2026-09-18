@@ -2,115 +2,185 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:padding="24dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pengaturan Anjungan"
-            android:textColor="#111111"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="URL Server SIMRS"
-            android:textColor="#444444"
-            android:textSize="14sp" />
-
-        <EditText
-            android:id="@+id/etUrl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:hint="http://192.168.1.10/"
-            android:inputType="textUri"
-            android:padding="12dp"
-            android:textSize="16sp" />
-
-        <Button
-            android:id="@+id/btnSave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Simpan" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Printer USB (Caysn IW-J82BT)"
-            android:textColor="#444444"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/tvPrinterStatus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Printer: -"
-            android:textColor="#111111"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnConnect"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hubungkan" />
+                android:text="Pengaturan Anjungan"
+                android:textColor="#111111"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/btnTest"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Tes Cetak" />
+                android:layout_marginTop="24dp"
+                android:text="URL Server SIMRS"
+                android:textColor="#444444"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="http://192.168.1.10/"
+                android:inputType="textUri"
+                android:padding="12dp"
+                android:textSize="16sp" />
 
             <Button
-                android:id="@+id/btnDisconnect"
+                android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Putuskan" />
+                android:layout_marginTop="12dp"
+                android:text="Simpan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Halaman web memanggil printer via window.PrinterBridge\n(print, printTicket, printRaw, cut, status)"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Sentuh layar utama 7x cepat untuk membuka pengaturan"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Kembali" />
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Halaman web memanggil printer via window.PrinterBridge\n(print, printTicket, printRaw, cut, status)"
-            android:textColor="#888888"
-            android:textSize="12sp" />
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Sentuh layar utama 7x cepat untuk membuka pengaturan"
-            android:textColor="#888888"
-            android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Printer USB (Caysn IW-J82BT)"
+                android:textColor="#444444"
+                android:textSize="14sp" />
 
-        <Button
-            android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Kembali" />
+            <TextView
+                android:id="@+id/tvPrinterStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="USB: -"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnConnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hubungkan USB" />
+
+                <Button
+                    android:id="@+id/btnTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Tes Cetak" />
+
+                <Button
+                    android:id="@+id/btnDisconnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Putuskan" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Printer Bluetooth (Caysn IW-J82BT)"
+                android:textColor="#444444"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvBtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Bluetooth: -"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pilih perangkat yang sudah di-pair di pengaturan Android:"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spBonded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnConnectBt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hubungkan BT" />
+
+                <Button
+                    android:id="@+id/btnRefreshBt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Muat Ulang Daftar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 

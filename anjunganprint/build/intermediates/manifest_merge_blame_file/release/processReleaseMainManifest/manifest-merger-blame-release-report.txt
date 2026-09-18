@@ -1,0 +1,202 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.anjungan.print"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-feature
+11-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:4:5-87
+12        android:name="android.hardware.usb.host"
+12-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:4:19-59
+13        android:required="false" />
+13-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:4:60-84
+14    <uses-feature
+14-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:5:5-85
+15        android:name="android.hardware.camera"
+15-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:5:19-57
+16        android:required="false" />
+16-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:5:58-82
+17    <uses-feature
+17-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:6:5-88
+18        android:name="android.hardware.bluetooth"
+18-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:6:19-60
+19        android:required="false" />
+19-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:6:61-85
+20
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:8:5-67
+21-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:8:22-64
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:9:5-65
+22-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:9:22-62
+23    <uses-permission
+23-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:10:5-12:38
+24        android:name="android.permission.BLUETOOTH"
+24-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:11:9-52
+25        android:maxSdkVersion="30" />
+25-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:12:9-35
+26    <uses-permission
+26-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:13:5-15:38
+27        android:name="android.permission.BLUETOOTH_ADMIN"
+27-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:14:9-58
+28        android:maxSdkVersion="30" />
+28-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:15:9-35
+29    <uses-permission
+29-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:16:5-18:58
+30        android:name="android.permission.BLUETOOTH_SCAN"
+30-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:17:9-57
+31        android:usesPermissionFlags="neverForLocation" />
+31-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:18:9-55
+32    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+32-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:19:5-76
+32-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:19:22-73
+33
+34    <permission
+34-->[androidx.core:core:1.13.1] /home/krisna/.gradle/caches/8.13/transforms/5a2c30360bab770f947d4c4d18970b9e/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+35        android:name="com.anjungan.print.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+35-->[androidx.core:core:1.13.1] /home/krisna/.gradle/caches/8.13/transforms/5a2c30360bab770f947d4c4d18970b9e/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+36        android:protectionLevel="signature" />
+36-->[androidx.core:core:1.13.1] /home/krisna/.gradle/caches/8.13/transforms/5a2c30360bab770f947d4c4d18970b9e/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+37
+38    <uses-permission android:name="com.anjungan.print.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+38-->[androidx.core:core:1.13.1] /home/krisna/.gradle/caches/8.13/transforms/5a2c30360bab770f947d4c4d18970b9e/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+38-->[androidx.core:core:1.13.1] /home/krisna/.gradle/caches/8.13/transforms/5a2c30360bab770f947d4c4d18970b9e/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+39
+40    <application
+40-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:21:5-54:19
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.13.1] /home/krisna/.gradle/caches/8.13/transforms/5a2c30360bab770f947d4c4d18970b9e/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+42        android:extractNativeLibs="false"
+43        android:icon="@mipmap/ic_launcher"
+43-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:22:9-43
+44        android:label="@string/app_name"
+44-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:24:9-41
+45        android:roundIcon="@mipmap/ic_launcher_round"
+45-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:23:9-54
+46        android:supportsRtl="true"
+46-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:25:9-35
+47        android:theme="@style/AppTheme"
+47-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:27:9-40
+48        android:usesCleartextTraffic="true" >
+48-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:26:9-44
+49        <activity
+49-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:29:9-43:20
+50            android:name="com.anjungan.print.MainActivity"
+50-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:30:13-41
+51            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode"
+51-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:32:13-94
+52            android:exported="true" >
+52-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:31:13-36
+53            <intent-filter>
+53-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:33:13-36:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:34:17-69
+54-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:34:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:35:17-77
+56-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:35:27-74
+57            </intent-filter>
+58            <intent-filter>
+58-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:37:13-39:29
+59                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+59-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:38:17-90
+59-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:38:25-87
+60            </intent-filter>
+61
+62            <meta-data
+62-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:40:13-42:57
+63                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+63-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:41:17-79
+64                android:resource="@xml/device_filter" />
+64-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:42:17-54
+65        </activity>
+66
+67        <provider
+68            android:name="androidx.core.content.FileProvider"
+68-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:46:13-62
+69            android:authorities="com.anjungan.print.fileprovider"
+69-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:47:13-64
+70            android:exported="false"
+70-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:48:13-37
+71            android:grantUriPermissions="true" >
+71-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:49:13-47
+72            <meta-data
+72-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:50:13-52:54
+73                android:name="android.support.FILE_PROVIDER_PATHS"
+73-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:51:17-67
+74                android:resource="@xml/file_paths" />
+74-->/home/krisna/iDRG/anjungan/anjunganprint/src/main/AndroidManifest.xml:52:17-51
+75        </provider>
+76        <provider
+76-->[androidx.emoji2:emoji2:1.3.0] /home/krisna/.gradle/caches/8.13/transforms/aca2a98cc180b82609e1d96d75a290aa/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.emoji2:emoji2:1.3.0] /home/krisna/.gradle/caches/8.13/transforms/aca2a98cc180b82609e1d96d75a290aa/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+78            android:authorities="com.anjungan.print.androidx-startup"
+78-->[androidx.emoji2:emoji2:1.3.0] /home/krisna/.gradle/caches/8.13/transforms/aca2a98cc180b82609e1d96d75a290aa/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+79            android:exported="false" >
+79-->[androidx.emoji2:emoji2:1.3.0] /home/krisna/.gradle/caches/8.13/transforms/aca2a98cc180b82609e1d96d75a290aa/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+80            <meta-data
+80-->[androidx.emoji2:emoji2:1.3.0] /home/krisna/.gradle/caches/8.13/transforms/aca2a98cc180b82609e1d96d75a290aa/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+81-->[androidx.emoji2:emoji2:1.3.0] /home/krisna/.gradle/caches/8.13/transforms/aca2a98cc180b82609e1d96d75a290aa/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+82                android:value="androidx.startup" />
+82-->[androidx.emoji2:emoji2:1.3.0] /home/krisna/.gradle/caches/8.13/transforms/aca2a98cc180b82609e1d96d75a290aa/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+83            <meta-data
+83-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/krisna/.gradle/caches/8.13/transforms/e2df9e1a22a1454c6124e5fb4b2ea403/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+84                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+84-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/krisna/.gradle/caches/8.13/transforms/e2df9e1a22a1454c6124e5fb4b2ea403/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+85                android:value="androidx.startup" />
+85-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/krisna/.gradle/caches/8.13/transforms/e2df9e1a22a1454c6124e5fb4b2ea403/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+86            <meta-data
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+87                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+88                android:value="androidx.startup" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+89        </provider>
+90
+91        <receiver
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+92            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+93            android:directBootAware="false"
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+94            android:enabled="true"
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+95            android:exported="true"
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+96            android:permission="android.permission.DUMP" >
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+98                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+99            </intent-filter>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+101                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+102            </intent-filter>
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+104                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+105            </intent-filter>
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+107                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/krisna/.gradle/caches/8.13/transforms/23f0282348662c96ee7a16bf8c3948d6/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+108            </intent-filter>
+109        </receiver>
+110    </application>
+111
+112</manifest>

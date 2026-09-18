@@ -16,3 +16,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "anjungan"
 include(":app")
+include(":printcore")
+include(":anjunganprint")

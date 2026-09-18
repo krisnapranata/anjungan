@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AnjunganMandiri</string>
+
+    <string-array name="paper_widths">
+        <item>58 mm</item>
+        <item>80 mm</item>
+    </string-array>
+
+    <!-- Cari -->
+    <string name="title_cari">Anjungan Registrasi Mandiri</string>
+    <string name="subtitle_cari">Silahkan masukkan identitas pasien Anda</string>
+    <string name="hint_cari">No.RM / NIK / Nama / Alamat / No.HP / Ibu / No.Peserta</string>
+    <string name="btn_cari">Cari</string>
+    <string name="btn_foto_ktp">Foto KTP</string>
+    <string name="btn_kamera">Kamera</string>
+
+    <!-- Poli -->
+    <string name="title_poli">Pilih Unit / Poliklinik</string>
+    <string name="subtitle_poli">Silahkan pilih poliklinik tujuan Anda</string>
+    <string name="label_terdaftar">%1$d terdaftar</string>
+    <string name="state_buka">Buka</string>
+    <string name="state_tutup">Tutup</string>
+
+    <!-- Dokter -->
+    <string name="title_dokter">Pilih Dokter</string>
+    <string name="label_kuota">%1$d / %2$d</string>
+    <string name="label_penuh">Penuh</string>
+
+    <!-- Konfirmasi -->
+    <string name="title_konfirmasi">Konfirmasi Registrasi</string>
+    <string name="subtitle_konfirmasi">Periksa kembali data sebelum menyimpan</string>
+    <string name="btn_simpan_cetak">Simpan &amp; Cetak</string>
+    <string name="btn_batal">Batal</string>
+
+    <!-- Sukses -->
+    <string name="title_sukses">BUKTI REGISTRASI</string>
+    <string name="btn_cetak">Cetak</string>
+    <string name="btn_selesai">Selesai</string>
+    <string name="footer_terimakasih">Terima kasih</string>
+
+    <!-- Umum -->
+    <string name="btn_kembali_cari">Cari Pasien Lain</string>
+    <string name="btn_kembali_poli">Pilih Poli Lain</string>
+    <string name="btn_loading">Memproses…</string>
+
+    <!-- Pengaturan -->
+    <string name="title_pengaturan">Pengaturan</string>
+    <string name="label_server_url">Alamat Server SIMRS</string>
+    <string name="hint_server_url">http://192.168.1.10/</string>
+    <string name="btn_simpan">Simpan</string>
+    <string name="btn_kembali">Kembali</string>
+    <string name="btn_test_print">Test Print</string>
+    <string name="btn_feed">Feed</string>
+    <string name="btn_cut">Cut</string>
+    <string name="btn_connect_usb">Hubungkan Printer USB</string>
+    <string name="btn_connect_bt">Hubungkan Bluetooth</string>
+    <string name="btn_refresh_bt">Segarkan</string>
+    <string name="btn_disconnect">Putuskan Semua</string>
+</resources>

@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_state_red.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_state_red.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_ic_person_add.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/ic_person_add.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_screen_poli.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/screen_poli.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_divider_dashed.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/divider_dashed.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_badge.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_badge.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.anjungan.print.anjunganprint-debug-25:/drawable_ic_poli.xml.flat",
+        "source": "com.anjungan.print.anjunganprint-main-27:/drawable/ic_poli.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_item.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_item.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_state_closed.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_state_closed.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_btn_outline.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_btn_outline.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_screen_konfirmasi.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/screen_konfirmasi.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_field.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_field.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/xml_device_filter.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/xml/device_filter.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_alert_warning.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_alert_warning.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_activity_main.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_chip_translucent.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_chip_translucent.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_state_green.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_state_green.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_header.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_header.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_countdown_digit.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_countdown_digit.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_item_dropdown_small.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/item_dropdown_small.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_screen_dokter.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/screen_dokter.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_screen_pengaturan.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/screen_pengaturan.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_screen_sukses.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/screen_sukses.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_screen_cari.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/screen_cari.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_receipt_header.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_receipt_header.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_gradient.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_gradient.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_logo_box.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_logo_box.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_accent.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_accent.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_alert_info.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_alert_info.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_item_poli.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/item_poli.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_alert_danger.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_alert_danger.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_light_box.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_light_box.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_receipt_body.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_receipt_body.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_card.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_btn_primary.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_btn_primary.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/drawable_bg_state_yellow.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/drawable/bg_state_yellow.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/xml_file_paths.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/xml/file_paths.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/layout_item_dokter.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/layout/item_dokter.xml"
+    },
+    {
+        "merged": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-debug-25:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "/home/krisna/.gradle/daemon/8.13/com.anjungan.print.anjunganprint-main-27:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.anjungan.print.anjunganprint-debug-25:/layout_item_poli.xml.flat",
+        "source": "com.anjungan.print.anjunganprint-main-27:/layout/item_poli.xml"
+    }
+]

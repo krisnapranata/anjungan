@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:maxWidth="600dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_header"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_konfirmasi"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/subtitle_konfirmasi"
+                    android:textColor="#B8CCF5"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/llAlerts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/boxCountdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_alert_warning"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvJamMulai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/alert_warning_fg"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Registrasi dibuka 1 jam sebelum jadwal"
+                        android:textColor="@color/muted"
+                        android:textSize="11sp" />
+
+                    <LinearLayout
+                        android:id="@+id/boxDigits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvCdH"
+                            style="@style/CountdownDigit" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@color/alert_warning_fg"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvCdM"
+                            style="@style/CountdownDigit" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="@color/alert_warning_fg"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvCdS"
+                            style="@style/CountdownDigit" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvCountdownStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/alert_warning_fg"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/InfoBox"
+                        android:layout_marginEnd="4dp">
+
+                        <TextView
+                            style="@style/InfoLabel"
+                            android:text="No. RM" />
+
+                        <TextView
+                            android:id="@+id/tvNoRm"
+                            style="@style/InfoValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/InfoBox"
+                        android:layout_marginStart="4dp">
+
+                        <TextView
+                            style="@style/InfoLabel"
+                            android:text="Nama Pasien" />
+
+                        <TextView
+                            android:id="@+id/tvNama"
+                            style="@style/InfoValue" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/InfoBox"
+                        android:layout_marginEnd="4dp">
+
+                        <TextView
+                            style="@style/InfoLabel"
+                            android:text="NIK KTP" />
+
+                        <TextView
+                            android:id="@+id/tvNik"
+                            style="@style/InfoValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/InfoBox"
+                        android:layout_marginStart="4dp">
+
+                        <TextView
+                            style="@style/InfoLabel"
+                            android:text="Alamat" />
+
+                        <TextView
+                            android:id="@+id/tvAlamat"
+                            style="@style/InfoValue" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/InfoBox"
+                        android:layout_marginEnd="4dp">
+
+                        <TextView
+                            style="@style/InfoLabel"
+                            android:text="Poliklinik" />
+
+                        <TextView
+                            android:id="@+id/tvPoli"
+                            style="@style/InfoValue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/InfoBox"
+                        android:layout_marginStart="4dp">
+
+                        <TextView
+                            style="@style/InfoLabel"
+                            android:text="Dokter" />
+
+                        <TextView
+                            android:id="@+id/tvDokter"
+                            style="@style/InfoValue" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/InfoBox"
+                        android:layout_marginEnd="4dp">
+
+                        <TextView
+                            style="@style/InfoLabel"
+                            android:text="Jenis Bayar" />
+
+                        <Spinner
+                            android:id="@+id/spPenjab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/InfoBox"
+                        android:layout_marginStart="4dp">
+
+                        <TextView
+                            style="@style/InfoLabel"
+                            android:text="Asal Rujukan" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/actPerujuk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/bg_field"
+                            android:completionThreshold="1"
+                            android:hint="Ketik nama Puskesmas..."
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textColor="@color/ink"
+                            android:textColorHint="#94A3B8"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/btnTambahPerujuk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/bg_btn_outline"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="+ Tambah Puskesmas"
+                            android:textColor="#0A5CFF"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/tvErrPerujuk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="harus diisi!"
+                            android:textColor="@color/alert_danger_fg"
+                            android:textSize="11sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/InfoBox"
+                        android:layout_marginEnd="4dp">
+
+                        <TextView
+                            style="@style/InfoLabel"
+                            android:text="Status Poli" />
+
+                        <TextView
+                            android:id="@+id/tvStatusPoli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/bg_badge"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/alert_info_fg"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvKonfirmasiError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/alert_danger_fg"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnBatalKonfirmasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/bg_btn_outline"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:text="@string/btn_batal"
+                        android:textColor="@color/muted" />
+
+                    <Button
+                        android:id="@+id/btnSimpanCetak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/bg_btn_primary"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:text="@string/btn_simpan_cetak"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

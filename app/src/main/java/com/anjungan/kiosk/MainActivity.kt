@@ -24,6 +24,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import com.anjungan.kiosk.databinding.ActivityMainBinding
+import com.anjungan.printcore.BluetoothPrinterManager
+import com.anjungan.printcore.UsbPrinterManager
 import java.io.File
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var printer: UsbPrinterManager
+    private lateinit var bluetoothPrinter: BluetoothPrinterManager
     private lateinit var bridge: PrinterBridge
 
     private var lastLoadedUrl: String? = null
@@ -44,6 +47,7 @@ class MainActivity : AppCompatActivity() {
     private var lastTapTime = 0L
     private var pendingCameraUri: Uri? = null
     private var pendingFileChooser: ValueCallback<Array<Uri>>? = null
+    private var btPermissionAsked = false
 
     private val usbReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
@@ -67,9 +71,30 @@ class MainActivity : AppCompatActivity() {
                         if (printer.connect(device)) injectPrinterStatus()
                     }
                 }
+                android.bluetooth.BluetoothDevice.ACTION_ACL_DISCONNECTED -> {
+                    if (bluetoothPrinter.isConnected() &&
+                        System.currentTimeMillis() - bluetoothPrinter.lastDisconnectAt > 2000
+                    ) {
+                        bluetoothPrinter.disconnect()
+                        injectPrinterStatus()
+                    }
+                }
+                android.bluetooth.BluetoothAdapter.ACTION_STATE_CHANGED -> {
+                    if (intent.getIntExtra(
+                            android.bluetooth.BluetoothAdapter.EXTRA_STATE, -1
+                        ) == android.bluetooth.BluetoothAdapter.STATE_ON
+                    ) {
+                        autoConnectBluetooth()
+                    }
+                }
             }
         }
     }
+
+    private val btPermissionLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) {
+            autoConnectBluetooth()
+        }
 
     private val fileChooserLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -102,7 +127,8 @@ class MainActivity : AppCompatActivity() {
         hideSystemUi()
 
         printer = UsbPrinterManager(this)
-        bridge = PrinterBridge(printer)
+        bluetoothPrinter = BluetoothPrinterManager(this)
+        bridge = PrinterBridge(printer, bluetoothPrinter)
 
         setupWebView()
         binding.btnRetry.setOnClickListener { loadKiosk() }
@@ -121,6 +147,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         hideSystemUi()
+        autoConnectBluetooth()
         val url = SettingsStore.serverUrl(this)
         if (url.isNotBlank() && lastLoadedUrl != url) {
             loadKiosk()
@@ -135,6 +162,7 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         try { unregisterReceiver(usbReceiver) } catch (_: Exception) {}
         printer.disconnect()
+        bluetoothPrinter.disconnect()
         super.onDestroy()
     }
 
@@ -263,6 +291,25 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun autoConnectBluetooth() {
+        if (!bluetoothPrinter.isBluetoothEnabled()) return
+        if (!bluetoothPrinter.hasConnectPermission()) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !btPermissionAsked) {
+                btPermissionAsked = true
+                btPermissionLauncher.launch(android.Manifest.permission.BLUETOOTH_CONNECT)
+            }
+            return
+        }
+        val mac = SettingsStore.printerMac(this)
+        if (mac.isBlank()) return
+        if (bluetoothPrinter.isConnected()) return
+        bluetoothPrinter.connect(mac) { ok ->
+            if (ok) {
+                runOnUiThread { injectPrinterStatus() }
+            }
+        }
+    }
+
     private fun openAdmin() {
         startActivity(Intent(this, AdminActivity::class.java))
     }
@@ -284,6 +331,8 @@ class MainActivity : AppCompatActivity() {
             addAction(UsbManager.ACTION_USB_DEVICE_ATTACHED)
             addAction(UsbManager.ACTION_USB_DEVICE_DETACHED)
             addAction(UsbPrinterManager.ACTION_USB_PERMISSION)
+            addAction(android.bluetooth.BluetoothDevice.ACTION_ACL_DISCONNECTED)
+            addAction(android.bluetooth.BluetoothAdapter.ACTION_STATE_CHANGED)
         }
         ContextCompat.registerReceiver(
             this,
