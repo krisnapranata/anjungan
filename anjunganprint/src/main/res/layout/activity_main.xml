@@ -5,6 +5,10 @@
     android:background="@drawable/bg_gradient">
 
     <include
+        android:id="@+id/screenHome"
+        layout="@layout/screen_home" />
+
+    <include
         android:id="@+id/screenCari"
         layout="@layout/screen_cari" />
 

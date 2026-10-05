@@ -32,6 +32,57 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:text="@string/label_brand_name"
+                android:textColor="@color/muted"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etBrandName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_field"
+                android:hint="@string/hint_brand_name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/ink"
+                android:textColorHint="#94A3B8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/label_brand_sub"
+                android:textColor="@color/muted"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etBrandSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_field"
+                android:hint="@string/hint_brand_sub"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/ink"
+                android:textColorHint="#94A3B8" />
+
+            <Button
+                android:id="@+id/btnSaveBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_btn_primary"
+                android:text="@string/btn_simpan"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="@string/label_server_url"
                 android:textColor="@color/muted"
                 android:textSize="13sp" />
@@ -92,6 +143,49 @@
                     android:layout_height="wrap_content"
                     android:entries="@array/paper_widths" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/label_antrian_baru"
+                android:textColor="@color/ink"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgAntrianBaru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbWajibPrinter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opt_wajib_printer"
+                    android:textColor="@color/ink"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/rbTanpaPrinter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/opt_tanpa_printer"
+                    android:textColor="@color/ink"
+                    android:textSize="13sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnResetAntrian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_btn_danger"
+                android:text="@string/btn_reset_antrian"
+                android:textColor="@color/alert_danger_fg"
+                android:textSize="13sp" />
 
             <Button
                 android:id="@+id/btnConnectUsb"

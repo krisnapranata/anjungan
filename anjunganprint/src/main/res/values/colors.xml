@@ -26,4 +26,36 @@
     <color name="gray_closed_fg">#6B7280</color>
     <color name="bg_dark_receipt">#010814</color>
     <color name="ic_launcher_background">#0A5CFF</color>
+
+    <!-- Dashboard theme -->
+    <color name="primary">#123b70</color>
+    <color name="secondary">#1c5ca8</color>
+    <color name="green">#39a852</color>
+    <color name="orange">#ff791f</color>
+    <color name="purple">#7650c9</color>
+    <color name="bg_light">#f4f8fc</color>
+    <color name="text_primary">#16365f</color>
+    <color name="text_muted">#60738c</color>
+    <color name="card_new_top">#e0f3ff</color>
+    <color name="card_new_bottom">#cfebfb</color>
+    <color name="card_control_top">#e8faeb</color>
+    <color name="card_control_bottom">#d7f5de</color>
+    <color name="card_mjkn_top">#fff4df</color>
+    <color name="card_mjkn_bottom">#ffedd1</color>
+    <color name="card_iterasi_top">#f3ebff</color>
+    <color name="card_iterasi_bottom">#e8ddfd</color>
+    <color name="btn_new">#1686d4</color>
+    <color name="btn_control">#27a94b</color>
+    <color name="btn_mjkn">#ff731d</color>
+    <color name="btn_iterasi">#7650c9</color>
+    <color name="line_green">#4ab64e</color>
+    <color name="brand_green">#1f9d50</color>
+    <color name="brand_green_light">#48b94e</color>
+    <color name="help_icon_bg">#2167aa</color>
+    <color name="health_border">#d8e4ed</color>
+    <color name="health_icon">#27a9bd</color>
+    <color name="input_border">#8296a0</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_82">#D1FFFFFF</color>
+    <color name="white_88">#E0FFFFFF</color>
 </resources>

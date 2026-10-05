@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/ktp_guide_border" />
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#99000000"
+        android:padding="8dp"
+        android:text="Arahkan kamera ke NIK KTP (16 digit)"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:text="Tutup" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99000000"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.15"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="-"
+            android:textColor="#FFD54F"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:enabled="false"
+            android:text="Ambil NIK" />
+    </LinearLayout>
+
+</FrameLayout>

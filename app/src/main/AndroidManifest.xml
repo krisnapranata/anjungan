@@ -51,6 +51,12 @@
             android:exported="false"
             android:screenOrientation="sensorLandscape" />
 
+        <activity
+            android:name=".KtpScanActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"

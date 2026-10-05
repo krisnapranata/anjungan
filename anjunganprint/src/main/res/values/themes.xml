@@ -4,7 +4,7 @@
         <item name="colorPrimary">#1565C0</item>
         <item name="colorPrimaryDark">#0D47A1</item>
         <item name="colorAccent">#1976D2</item>
-        <item name="android:windowBackground">@color/navy_dark</item>
+        <item name="android:windowBackground">@color/bg_light</item>
     </style>
 
     <style name="ChipStyle">
@@ -18,6 +18,43 @@
         <item name="android:paddingBottom">3dp</item>
         <item name="android:textColor">@color/muted</item>
         <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="ServiceTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minLines">2</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ServiceDesc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minLines">2</item>
+        <item name="android:textColor">@color/text_muted</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="ActionIcon">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:padding">11dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="ActionLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textColor">@color/text_muted</item>
+        <item name="android:textSize">9sp</item>
     </style>
 
     <style name="CountdownDigit">

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jk_array">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="gol_darah_array">
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="stts_nikah_array">
+        <item>MENIKAH</item>
+        <item>BELUM MENIKAH</item>
+        <item>JANDA</item>
+        <item>DUDHA</item>
+        <item>JOMBLO</item>
+    </string-array>
+
+    <string-array name="agama_array">
+        <item>ISLAM</item>
+        <item>KRISTEN</item>
+        <item>KATOLIK</item>
+        <item>HINDU</item>
+        <item>BUDHA</item>
+        <item>KONG HU CHU</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="pnd_array">
+        <item>TS</item>
+        <item>TK</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+        <item>SLTA/SEDERAJAT</item>
+        <item>D1</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>D4</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="keluarga_array">
+        <item>AYAH</item>
+        <item>IBU</item>
+        <item>ISTRI</item>
+        <item>SUAMI</item>
+        <item>SAUDARA</item>
+        <item>ANAK</item>
+        <item>DIRI SENDIRI</item>
+        <item>LAIN-LAIN</item>
+    </string-array>
+
+    <string-array name="suku_bangsa_array">
+        <item>-</item>
+    </string-array>
+
+    <string-array name="bahasa_array">
+        <item>-</item>
+    </string-array>
+
+    <string-array name="cacat_fisik_array">
+        <item>-</item>
+    </string-array>
+
+    <string-array name="penjab_array">
+        <item>4 - CARABAYAR</item>
+    </string-array>
+</resources>

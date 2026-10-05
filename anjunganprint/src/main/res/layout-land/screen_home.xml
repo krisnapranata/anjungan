@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dashboard"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Brand -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/vLogo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_logo_circle" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvBrandName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/app_name"
+                        android:textColor="@color/primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvBrandSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/text_muted"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Hero Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hero_title"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Clock -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/primary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/primary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Hero Sub -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hero_sub"
+                android:textColor="@color/primary"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_line_green" />
+        </LinearLayout>
+
+        <!-- SERVICES: 1 ROW x 4 COLS -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <!-- Card Pasien Baru -->
+            <LinearLayout
+                android:id="@+id/cardBaru"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_card_new"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp"
+                app:layout_constraintEnd_toStartOf="@id/cardKontrol"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintHeight_default="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_icon_box"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_service_new" />
+
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:text="@string/service_new_title" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_antrian_next"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingStart="14dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_antrian_berikutnya"
+                        android:textColor="@color/text_muted"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:id="@+id/tvAntrianNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="@color/btn_new"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnPasienBaru"
+                    style="@style/ActionIcon"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_circle"
+                    android:contentDescription="@string/opt_cetak"
+                    android:src="@drawable/ic_btn_cetak" />
+
+                <TextView
+                    style="@style/ActionLabel"
+                    android:text="@string/opt_cetak" />
+            </LinearLayout>
+
+            <!-- Card Pasien Kontrol -->
+            <LinearLayout
+                android:id="@+id/cardKontrol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_card_control"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp"
+                app:layout_constraintEnd_toStartOf="@id/cardMjkn"
+                app:layout_constraintHeight_default="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/cardBaru"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_icon_box"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_service_control" />
+
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:text="@string/service_control_title" />
+
+                <EditText
+                    android:id="@+id/etIdentitasKontrol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_input_kartu"
+                    android:hint="@string/service_control_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/btnKameraKontrol"
+                            style="@style/ActionIcon"
+                            android:background="@drawable/bg_btn_circle_control"
+                            android:contentDescription="@string/opt_kamera"
+                            android:src="@drawable/ic_btn_kamera" />
+
+                        <TextView
+                            style="@style/ActionLabel"
+                            android:text="@string/opt_kamera" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/btnPasienKontrol"
+                            style="@style/ActionIcon"
+                            android:background="@drawable/bg_btn_circle_control"
+                            android:contentDescription="@string/opt_cari"
+                            android:src="@drawable/ic_btn_cari" />
+
+                        <TextView
+                            style="@style/ActionLabel"
+                            android:text="@string/opt_cari" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Card M-JKN -->
+            <LinearLayout
+                android:id="@+id/cardMjkn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_card_mjkn"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp"
+                app:layout_constraintEnd_toStartOf="@id/cardIterasi"
+                app:layout_constraintHeight_default="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/cardKontrol"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_icon_box"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_service_mjkn" />
+
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:text="@string/service_mjkn_title" />
+
+                <TextView
+                    style="@style/ServiceDesc"
+                    android:text="@string/service_mjkn_desc" />
+
+                <ImageView
+                    android:id="@+id/btnMjkn"
+                    style="@style/ActionIcon"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_circle_mjkn"
+                    android:contentDescription="@string/opt_checkin"
+                    android:src="@drawable/ic_btn_checkin" />
+
+                <TextView
+                    style="@style/ActionLabel"
+                    android:text="@string/opt_checkin" />
+            </LinearLayout>
+
+            <!-- Card Iterasi -->
+            <LinearLayout
+                android:id="@+id/cardIterasi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_card_iterasi"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_default="spread"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/cardMjkn"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_icon_box"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_service_iterasi" />
+
+                <TextView
+                    style="@style/ServiceTitle"
+                    android:text="@string/service_iterasi_title" />
+
+                <TextView
+                    style="@style/ServiceDesc"
+                    android:text="@string/service_iterasi_desc" />
+
+                <ImageView
+                    android:id="@+id/btnIterasi"
+                    style="@style/ActionIcon"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_circle_iterasi"
+                    android:contentDescription="@string/opt_cari"
+                    android:src="@drawable/ic_btn_cari" />
+
+                <TextView
+                    style="@style/ActionLabel"
+                    android:text="@string/opt_cari" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- HASIL PASIEN -->
+        <LinearLayout
+            android:id="@+id/llHasilPasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_footer"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvHasilTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHasilNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHasilDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text=""
+                android:textColor="@color/text_muted"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnLanjutPoli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_primary"
+                android:text="Lanjut Pilih Poliklinik"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnCariLagi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_btn_outline"
+                android:text="Cari Pasien Lain"
+                android:textColor="@color/muted"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Settings link -->
+        <Button
+            android:id="@+id/btnPengaturanHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:text="@string/title_pengaturan"
+            android:textColor="@color/text_muted"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

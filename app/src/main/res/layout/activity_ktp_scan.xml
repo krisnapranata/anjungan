@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="480dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ktp_guide_border" />
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#99000000"
+        android:padding="8dp"
+        android:text="Arahkan kamera ke bagian NIK KTP"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="96dp"
+        android:background="#99000000"
+        android:padding="6dp"
+        android:textColor="#FFD54F"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:text="Tutup" />
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="24dp"
+        android:text="Ambil Foto" />
+
+</FrameLayout>

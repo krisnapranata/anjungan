@@ -12,7 +12,7 @@
     <string name="subtitle_cari">Silahkan masukkan identitas pasien Anda</string>
     <string name="hint_cari">No.RM / NIK / Nama / Alamat / No.HP / Ibu / No.Peserta</string>
     <string name="btn_cari">Cari</string>
-    <string name="btn_foto_ktp">Foto KTP</string>
+    <string name="btn_foto_ktp">Ambil Antrean Pendaftaran Pasien Baru</string>
     <string name="btn_kamera">Kamera</string>
 
     <!-- Poli -->
@@ -57,4 +57,47 @@
     <string name="btn_connect_bt">Hubungkan Bluetooth</string>
     <string name="btn_refresh_bt">Segarkan</string>
     <string name="btn_disconnect">Putuskan Semua</string>
+
+    <!-- Dashboard Home -->
+    <string name="hero_title">ANJUNGAN MANDIRI</string>
+    <string name="hero_sub">LAYANAN PASIEN RAWAT JALAN</string>
+    <string name="hero_desc">Pilih layanan yang Anda butuhkan</string>
+    <string name="service_new_title">Antrian\nPasien Baru</string>
+    <string name="service_new_desc">Ambil nomor antrian untuk pasien baru</string>
+    <string name="service_control_title">Antrian\nPasien Kontrol</string>
+    <string name="service_control_desc">Masukkan NIK atau Nomor Rekam Medis</string>
+    <string name="service_control_hint">NIK / No. RM</string>
+    <string name="service_control_help">Masukkan NIK atau Nomor Rekam Medis</string>
+    <string name="service_mjkn_title">Check-in\nM-JKN</string>
+    <string name="service_mjkn_desc">Lakukan check-in untuk layanan BPJS</string>
+    <string name="service_mjkn_note">Tempelkan kartu BPJS Anda pada alat pembaca</string>
+    <string name="service_iterasi_title">Pasien\nIterasi</string>
+    <string name="service_iterasi_desc">Lanjutkan kunjungan dengan data sebelumnya</string>
+    <string name="help_title">Butuh Bantuan?</string>
+    <string name="help_text">Silakan hubungi petugas kami yang berada di dekat anjungan ini.</string>
+    <string name="health_title">Layanan Kesehatan</string>
+    <string name="health_text">Demi kenyamanan bersama</string>
+    <string name="coming_soon">Fitur ini segera hadir</string>
+
+    <!-- Pengaturan Brand -->
+    <string name="label_brand_name">Nama Rumah Sakit</string>
+    <string name="hint_brand_name">RSI Yatofa</string>
+    <string name="label_brand_sub">Sub Judul</string>
+    <string name="hint_brand_sub">Rumah Sakit Islam</string>
+
+    <!-- Pengaturan Antrian Pasien Baru -->
+    <string name="label_antrian_baru">Antrian Pasien Baru</string>
+    <string name="opt_wajib_printer">Wajib Printer — nomor hanya terbit bila printer siap</string>
+    <string name="opt_tanpa_printer">Tanpa Printer — nomor tetap terbit, tiket tidak dicetak</string>
+    <string name="msg_antrian_tidak_cetak">Nomor antrian %1$s sudah dibuat.\nPrinter tidak terhubung, tiket tidak dicetak.</string>
+    <string name="label_antrian_berikutnya">Antrian Berikutnya</string>
+    <string name="opt_cetak">Cetak</string>
+    <string name="opt_kamera">Kamera</string>
+    <string name="opt_cari">Cari</string>
+    <string name="opt_checkin">Check-in</string>
+    <string name="label_reset_antrian">Reset Nomor Antrian</string>
+    <string name="btn_reset_antrian">Hapus Semua Nomor Antrian Hari Ini</string>
+    <string name="reset_antrian_konfirmasi">Hapus semua nomor antrian tanggal %1$s?\n\nJumlah: %2$d nomor.\n\nTindakan ini tidak dapat dibatalkan.</string>
+    <string name="reset_antrian_selesai">%1$d nomor antrian tanggal %2$s telah dihapus.</string>
+    <string name="reset_antrian_gagal">Gagal reset: %1$s</string>
 </resources>

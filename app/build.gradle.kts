@@ -56,4 +56,9 @@ dependencies {
     implementation(project(":printcore"))
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")
+
+    implementation("androidx.camera:camera-camera2:1.6.2")
+    implementation("androidx.camera:camera-lifecycle:1.6.2")
+    implementation("androidx.camera:camera-view:1.6.2")
+    implementation("com.google.mlkit:text-recognition:16.0.1")
 }

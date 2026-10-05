@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Pasien Baru"
+            android:textColor="@color/ink"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Periksa dan lengkapi data berikut"
+            android:textColor="@color/muted"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Data Pribadi"
+            android:textColor="@color/ink"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="No. KTP (NIK)"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etNik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nama Lengkap"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat Lahir"
+                    android:textColor="@color/ink"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etTmpLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_field"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/ink"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:textColor="@color/ink"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etTglLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_field"
+                    android:hint="YYYY-MM-DD"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/ink"
+                    android:textColorHint="#94A3B8"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Jenis Kelamin"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spJk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Golongan Darah"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spGolDarah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Agama"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spAgama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Status Perkawinan"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spSttsNikah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pekerjaan"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etPekerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pendidikan"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spPnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Alamat"
+            android:textColor="@color/ink"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Alamat"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="textPostalAddress"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RT/RW"
+                    android:textColor="@color/ink"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etRtRw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_field"
+                    android:hint="001/002"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/ink"
+                    android:textColorHint="#94A3B8"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kel/Desa"
+                    android:textColor="@color/ink"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etKelDesa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_field"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/ink"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kecamatan"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etKecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kabupaten/Kota"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etKabKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Provinsi"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etProvinsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Keluarga / Penanggung Jawab"
+            android:textColor="@color/ink"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nama Ibu"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etNmIbu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nama Penanggung Jawab"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etNamaPj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Hubungan Keluarga"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spKeluarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pekerjaan PJ"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etPekerjaanPj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Alamat PJ"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etAlamatPj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="textPostalAddress"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kelurahan PJ"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etKelurahanPj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kecamatan PJ"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etKecamatanPj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kabupaten PJ"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etKabupatenPj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Propinsi PJ"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etPropinsiPj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Data Lainnya"
+            android:textColor="@color/ink"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="No. HP"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etNoTlp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="No. Peserta"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etNoPeserta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="NIP"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etNip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Email"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Suku Bangsa"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spSukuBangsa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Bahasa"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spBahasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cacat Fisik"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spCacatFisik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Perusahaan"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etPerusahaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/ink"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Penjamin/Asuransi"
+            android:textColor="@color/ink"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spPenjab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_field"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBatal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_outline"
+                android:text="Batal"
+                android:textColor="@color/muted" />
+
+            <Button
+                android:id="@+id/btnSimpanPasien"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_primary"
+                android:text="Simpan &amp; Lanjutkan"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

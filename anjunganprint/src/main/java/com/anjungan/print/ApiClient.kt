@@ -16,6 +16,15 @@ class ApiClient(private val baseUrl: String) {
     private val executor: ExecutorService = Executors.newSingleThreadExecutor()
     private val main = Handler(Looper.getMainLooper())
 
+    /**
+     * Pesan error terakhir dari request yang gagal (HTTP code + body server,
+     * atau exception). Dipakai layar untuk menampilkan penyebab sebenarnya,
+     * bukan pesan generik.
+     */
+    @Volatile
+    var lastError: String = ""
+        private set
+
     fun get(path: String, cb: (ok: Boolean, json: JSONObject?) -> Unit) {
         executor.execute {
             val r = request(path) { it.requestMethod = "GET" }
@@ -85,8 +94,15 @@ class ApiClient(private val baseUrl: String) {
             } catch (e: Exception) {
                 null
             }
+            lastError = if (code in 200..299) {
+                ""
+            } else {
+                "HTTP $code" + if (body.isBlank()) "" else ": ${body.take(300)}"
+            }
             return (code in 200..299) to json
         } catch (e: Exception) {
+            lastError = e.javaClass.simpleName +
+                (e.message?.let { ": $it" } ?: "")
             return false to null
         } finally {
             try { conn?.disconnect() } catch (_: Exception) {}

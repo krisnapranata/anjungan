@@ -136,34 +136,54 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/tvAntrianBerikutnya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:text="Antrian Baru Berikutnya: 001"
+                android:textColor="@color/muted"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
                 <Button
                     android:id="@+id/btnFotoKtp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="6dp"
                     android:background="@drawable/bg_btn_primary"
-                    android:paddingStart="18dp"
-                    android:paddingEnd="18dp"
+                    android:drawableStart="@drawable/ic_ticket"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|start"
+                    android:minHeight="52dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:text="@string/btn_foto_ktp"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btnKamera"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/bg_btn_outline"
-                    android:paddingStart="18dp"
-                    android:paddingEnd="18dp"
+                    android:drawableStart="@drawable/ic_camera"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|start"
+                    android:minHeight="52dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:text="@string/btn_kamera"
-                    android:textColor="#0A5CFF" />
+                    android:textColor="#0A5CFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <ProgressBar

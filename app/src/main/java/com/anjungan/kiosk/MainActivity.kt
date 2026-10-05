@@ -1,9 +1,11 @@
 package com.anjungan.kiosk
 
+import android.Manifest
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.pm.PackageManager
 import android.hardware.usb.UsbDevice
 import android.hardware.usb.UsbManager
 import android.net.Uri
@@ -41,6 +43,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var printer: UsbPrinterManager
     private lateinit var bluetoothPrinter: BluetoothPrinterManager
     private lateinit var bridge: PrinterBridge
+    private lateinit var ktpBridge: KtpBridge
 
     private var lastLoadedUrl: String? = null
     private var tapCount = 0
@@ -118,6 +121,25 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    private val ktpLauncher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            val nik = result.data?.getStringExtra(KtpScanActivity.EXTRA_NIK)
+            if (result.resultCode == RESULT_OK && nik != null) {
+                injectNik("""{"status":"ok","nik":"$nik"}""")
+            } else {
+                injectNik("""{"status":"cancelled"}""")
+            }
+        }
+
+    private val cameraPermissionLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
+            if (granted) {
+                ktpLauncher.launch(Intent(this, KtpScanActivity::class.java))
+            } else {
+                injectNik("""{"status":"permission_denied"}""")
+            }
+        }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -129,6 +151,7 @@ class MainActivity : AppCompatActivity() {
         printer = UsbPrinterManager(this)
         bluetoothPrinter = BluetoothPrinterManager(this)
         bridge = PrinterBridge(printer, bluetoothPrinter)
+        ktpBridge = KtpBridge(this)
 
         setupWebView()
         binding.btnRetry.setOnClickListener { loadKiosk() }
@@ -192,6 +215,7 @@ class MainActivity : AppCompatActivity() {
             userAgentString = "$userAgentString AnjunganKiosk/1.0"
         }
         binding.webView.addJavascriptInterface(bridge, "PrinterBridge")
+        binding.webView.addJavascriptInterface(ktpBridge, "KtpBridge")
         binding.webView.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(
                 view: WebView,
@@ -323,6 +347,21 @@ class MainActivity : AppCompatActivity() {
     private fun injectPrinterStatus() {
         val status = bridge.status()
         val js = "try{if(window.AnjunganOnPrinterChange){AnjunganOnPrinterChange($status)}}catch(e){}"
+        binding.webView.evaluateJavascript(js, null)
+    }
+
+    fun startKtpScan() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) ==
+            PackageManager.PERMISSION_GRANTED
+        ) {
+            ktpLauncher.launch(Intent(this, KtpScanActivity::class.java))
+        } else {
+            cameraPermissionLauncher.launch(Manifest.permission.CAMERA)
+        }
+    }
+
+    private fun injectNik(json: String) {
+        val js = "try{if(window.AnjunganOnNikScanned){AnjunganOnNikScanned($json)}}catch(e){}"
         binding.webView.evaluateJavascript(js, null)
     }
 
